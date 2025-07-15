@@ -1,0 +1,160 @@
+Setting up basic git configuration...
+Git version: git version 2.43.0
+Note: Configure your git user with:
+  git config --global user.name 'Your Name'
+  git config --global user.email 'your.email@example.com'
+⚡ Starting Nginx Performance Tuning...
+⚡ Starting System Performance Tuning...
+📄 Updating /etc/sysctl.conf...
+fs.file-max = 2097152
+net.core.somaxconn = 65535
+net.core.netdev_max_backlog = 4096
+net.ipv4.tcp_max_syn_backlog = 8192
+net.ipv4.ip_local_port_range = 32768 60999
+📄 Updating /etc/security/limits.conf...
+📄 Ensuring PAM config includes limits...
+📄 Configuring systemd limits...
+⏰ Configuring system scheduling and cleanup automation...
+Configuring certbot auto-renewal...
+Setting up system maintenance cron jobs...
+✅ Verifying applied performance values:
+ulimit: 1024
+fs.file-max: 2097152
+somaxconn: 65535
+netdev_max_backlog: 4096
+tcp_max_syn_backlog: 8192
+ip_local_port_range: 32768      60999
+
+✅ Verifying PHP 8.3 installation and modules:
+PHP Warning:  PHP Startup: Unable to load dynamic library 'openswoole.so' (tried: /usr/lib/php/20230831/openswoole.so (/usr/lib/php/20230831/openswoole.so: undefined symbol: socket_ce), /usr/lib/php/20230831/openswoole.so.so (/usr/lib/php/20230831/openswoole.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+PHP 8.3.23 (cli) (built: Jul  3 2025 16:11:22) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.3.23, Copyright (c) Zend Technologies
+    with Zend OPcache v8.3.23, Copyright (c), by Zend Technologies
+
+PHP modules installed:
+PHP Warning:  PHP Startup: Unable to load dynamic library 'openswoole.so' (tried: /usr/lib/php/20230831/openswoole.so (/usr/lib/php/20230831/openswoole.so: undefined symbol: socket_ce), /usr/lib/php/20230831/openswoole.so.so (/usr/lib/php/20230831/openswoole.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[PHP Modules]
+bcmath
+calendar
+Core
+ctype
+curl
+date
+dom
+exif
+FFI
+fileinfo
+filter
+ftp
+gd
+gettext
+hash
+iconv
+imagick
+intl
+json
+libxml
+mbstring
+mysqli
+mysqlnd
+openssl
+pcntl
+pcre
+PDO
+pdo_mysql
+pdo_sqlite
+Phar
+posix
+random
+readline
+Reflection
+session
+shmop
+SimpleXML
+sockets
+sodium
+SPL
+sqlite3
+standard
+sysvmsg
+sysvsem
+sysvshm
+tokenizer
+xml
+xmlreader
+xmlwriter
+xsl
+Zend OPcache
+zip
+zlib
+
+[Zend Modules]
+Zend OPcache
+
+
+🎉 Setup completed successfully!
+
+=== INSTALLED CORE SOFTWARE ===
+• Nginx - Web server
+• PHP 8.3 - with all required modules
+• MySQL Server - Database server
+• Node.js 20.x - JavaScript runtime
+• Composer - PHP dependency manager
+• Certbot - SSL certificate management
+• OpenSwoole - High-performance PHP extension
+
+=== INSTALLED MONITORING TOOLS ===
+• htop          - Interactive process viewer (run: htop)
+• iftop         - Real-time network bandwidth monitor (run: sudo iftop)
+• nethogs       - Network usage by process (run: sudo nethogs)
+• vnstat        - Network statistics (run: vnstat -i eth0)
+• nload         - Network load monitor (run: nload)
+• iotop         - I/O usage by process (run: sudo iotop)
+• dstat         - System statistics (run: dstat)
+• ncdu          - Disk usage analyzer (run: ncdu)
+• net-tools     - Network utilities (netstat, ifconfig)
+• fail2ban      - Intrusion prevention system
+
+=== USEFUL MONITORING COMMANDS ===
+• bandwidth     - Show network statistics
+• netspeed      - Show real-time network speed
+• netconnections- Show network usage by process
+• netreal       - Show real-time network connections
+• bandwidth-live- Live bandwidth monitoring
+• diskusage     - Analyze disk usage
+• processes     - Show running processes
+• iostat        - Show I/O statistics
+• systemstats   - Show system statistics
+
+=== PERFORMANCE TUNING APPLIED ===
+• File descriptor limits increased to 262,144
+• Network performance optimized
+• System limits configured
+• PAM limits enabled
+• Systemd limits configured
+• Automated scheduling configured:
+  - Certbot renewal: 2:30 AM daily
+  - Memory cleanup: 3:00 AM daily
+  - Log cleanup: 3:30 AM every Friday
+  - System reboot: 4:00 AM every Friday
+
+=== PHP 8.3 MODULES INSTALLED ===
+All required PHP modules have been installed including:
+• OpenSwoole (modern successor to Swoole)
+• ImageMagick (imagick)
+• All core PHP modules and extensions
+
+=== SECURITY CONFIGURATION ===
+Fail2ban status:
+Status
+|- Number of jail:      1
+`- Jail list:   sshd
+
+Certbot auto-renewal status:
+Custom certbot renewal scheduled at 2:30 AM daily
+Default certbot timer: disabled
+disabled
+
+⚠️  Reboot is recommended to apply all systemd-level changes and performance tuning.
+ubuntu@ip-172-31-35-44:~/bash-scripts$ 
